@@ -1,0 +1,19 @@
+<ion-view class="slide-left-right" cache-view="false">
+	
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+		<h1 class="title">Graficos</h1>
+	</ion-nav-buttons>
+
+	<ion-content overflow-scroll="false" ng-controller="grafico">
+
+		<div>
+		<div class="bar bar-header">
+				<h2 class="title">Indice de Crimes em Parnaíba</h2>
+			</div>
+
+			<nvd3 options="vm.options" data="vm.data"></nvd3>
+		</div>
+		
+	</ion-content>
+</ion-view>

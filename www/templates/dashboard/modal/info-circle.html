@@ -1,0 +1,33 @@
+<ion-modal-view>
+	<ion-header-bar class="bar bar-header bar-positive">
+		<h1 class="title">Informações</h1>
+		<div class="buttons">
+			<button class="button button-clear" ng-click="modalInfoCrime.hide()">
+				<i class="ion-android-close"></i>
+			</button>
+		</div>
+	</ion-header-bar>
+	<ion-content overflow-scroll="false" padding="false">
+
+		<div class="list">
+			<div class="item item-divider">
+				Total de Crimes <b>{{ view.length }}</b>	
+			</div>
+
+			<a class="item item-avatar" ng-repeat="crime in view" ng-click="visualizarCrime(crime)">
+				<img src="../../../img/sos.png" alt="">
+				<p>{{ crime.tipo_crime }}</p>
+				<p>{{ crime.data_crime | date:'dd/mm/yyyy' }} às {{ crime.hora_crime | date:'HH:mm' }}</p>
+			</a>
+
+			<div class="item">
+				<div class="center item item-text-wrap">
+					Adicionar novo crime
+				</div>
+				<button class="button button-block icon-right ion-chevron-right button-positive" ng-click="modalAddCircle()">
+					Adicionar
+				</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-modal-view>

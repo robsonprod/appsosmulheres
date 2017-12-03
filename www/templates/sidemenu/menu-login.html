@@ -1,0 +1,37 @@
+<ion-view class="slide-left-right">
+
+	<ion-nav-buttons>
+		<h1 class="title">Login</h1>
+		<div class="buttons">
+			<button class="button button-clear" ng-click="myGoBack()"><i class="ion-android-close"></i></button>
+		</div>
+	</ion-nav-buttons>
+
+	<ion-content overflow-scroll="false">
+		<div padding>
+
+			<form ng-submit="login()" padding class="menu-login">
+				<div class="list">
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Email</span>
+						<input type="email" placeholder="email" ng-model="account.email" required>
+					</label>
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Password</span>
+						<input type="password" placeholder="password" ng-model="account.password" required>
+					</label>
+
+				</div>
+			</form>
+
+			<div padding>
+
+				<div class="row">
+					<div class="col"><button class="button button-positive button-block" ng-click="login()">Log In</button></div>
+				</div>
+
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

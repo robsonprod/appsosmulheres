@@ -1,0 +1,44 @@
+<ion-view class="slide-left-right">
+
+	<ion-nav-buttons>
+		<h1 class="title">Criar Conta</h1>
+		<div class="buttons">
+			<button class="button button-clear" ng-click="myGoBack()"><i class="ion-android-close"></i></button>
+		</div>
+	</ion-nav-buttons>
+
+	<ion-content overflow-scroll="false">
+		<div padding>
+
+
+		<form ng-submit="cadastrar()" padding class="menu-cadastro">
+			<div class="list">
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Nome</span>
+					<input type="text" placeholder="Nome" ng-model="account.name">
+				</label>
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Email</span>
+					<input type="email" placeholder="Email" ng-model="account.email">
+				</label>
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Password</span>
+					<input type="password" placeholder="Password" ng-model="account.password">
+				</label>
+
+			</div>
+		</form>
+		</div>
+
+		<div class="row">
+			<div class="col"><button class="button button-positive button-block" ng-click="cadastrar()">Criar Conta</button></div>
+			<div class="col"><button class="button button-positive button-block" ui-sref="sidemenu.menu-login">Já Tenho Login</button></div>
+		</div>
+
+		<div class="card card-dif">
+			<div class="item item-text-wrap">
+				Não se preocupe suas informações não serão expostas.
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

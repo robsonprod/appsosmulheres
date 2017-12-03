@@ -1,0 +1,92 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.list a.item{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+.item{
+    border-width: 0px;
+}
+/* Empty. Add your own CSS if you like */
+.scroll{
+	height: 100%;
+}
+.scroll-view.scroll-x {
+    overflow-x: hidden;  /* default value is 'scroll' */
+}
+hr{
+    height:3px;
+    border-width:0;
+}
+#map {
+	width: 100%;
+    height: 100%;
+}
+
+
+/*menu*/
+
+.side-menu-gradient{
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d23b8c), color-stop(100%, #123873));
+    background: -moz-radial-gradient(center, ellipse cover, #9c1b94 0%, #d23b8c 100%);
+    background: -webkit-linear-gradient(to bottom right, #9c1b94, #d23b8c);
+    background: -o-linear-gradient(to bottom right, #9c1b94, #d23b8c);
+    background: -ms-linear-gradient(to bottom right, #9c1b94, #d23b8c);
+    background: linear-gradient(to bottom right, #9c1b94, #d23b8c);
+}
+
+.profile-img img{
+	border-radius: 40%;
+}
+
+.side-menu-item{
+	background: none;
+	color: #fff;
+	border-style: none;
+}
+.side-menu-item .item-content{
+	background: none;
+}
+
+.menu-cadastro{
+    padding-left: 17px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+}
+.menu-login{
+    padding-left: 17px;
+    padding-bottom: 40px;
+    padding-right: 24px;
+    padding-top: 30px;
+}
+.card-dif{
+    box-shadow: 0 6px 15px rgba(65,28,0,0.5);
+    border: inset;
+    border-color: #d23b8c;
+}
+
+.image-sobre-projeto{
+    width: 50%;
+}
+.titulo-sobre-projeto{
+    
+}
+
+/*fab button*/
+.fab{
+    background-color: #d23b8c;
+}
+.fab-button-right{
+    background-color: none;
+}
+
+/*sobreescrevendo css ionic*/
+.platform-android .popover .item{
+    background-color: #fff;
+}

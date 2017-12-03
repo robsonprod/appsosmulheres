@@ -1,0 +1,40 @@
+<ion-modal-view>
+	
+	<ion-header-bar class="bar bar-header bar-positive">
+		<h1 class="title">Informações</h1>
+		<div class="buttons">
+			<button class="button button-clear" ng-click="modalInfo.hide()">
+				<i class="ion-android-close"></i>
+			</button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content overflow-scroll="false">
+		<div class="list item-borderless">
+			<label class="item item-input">
+				<span class="input-label">Data</span>
+				<span>{{crimeView.data_crime | date:'dd/MM/yyyy' }}</span>
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">Hora</span>
+				<span>{{crimeView.hora_crime | date:'HH:mm' }}</span>
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">Crime</span>
+				<span>{{crimeView.tipo_crime}}</span>
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">Local</span>
+				<span>{{crimeView.tipo_local}}</span>
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">meio de agressao</span>
+				<span>{{crimeView.tipo_meio}}</span>
+			</label>
+		</div>
+	</ion-content>
+</ion-modal-view>

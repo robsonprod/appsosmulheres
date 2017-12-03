@@ -1,0 +1,17 @@
+<ion-view class="slide-left-right" cache-view="false">
+	
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+		<h1 class="title">Mapa</h1>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header" overflow-scroll="false" ng-init="initialize()">
+
+		<fab-button-right target-id="content" class="fab" ng-click="openPopover($event)">
+			<i class="icon ion ion-funnel"></i>
+		</fab-button-right>
+
+		<div id="map" data-tap-disabled="true"></div>
+
+	</ion-content>
+</ion-view>
